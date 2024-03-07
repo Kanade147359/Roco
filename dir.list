@@ -1,0 +1,21 @@
+/my-app
+  /backend       # Goで書かれたバックエンドのコード
+    /api         # REST APIエンドポイント
+    /model       # データモデル
+    /store       # データアクセスレイヤー（データベース操作）
+    /middleware  # ミドルウェア（認証、ロギング等）
+    /utils       # ヘルパー関数やユーティリティ
+    main.go      # エントリポイント
+  /frontend      # Reactで書かれたフロントエンドのコード
+    /public       # 静的ファイル（index.html, favicon.ico）
+    /src
+      /components # 再利用可能なUIコンポーネント
+      /pages      # アプリケーションのページ（またはビュー）
+      /hooks      # カスタムフック
+      /context    # React Context（状態管理）
+      /services   # 外部APIやバックエンドとの通信を扱う
+      /utils      # ヘルパー関数やユーティリティ
+      App.js      # アプリケーションのメインコンポーネント
+      index.js    # エントリーポイント
+  .gitignore      # Gitで追跡しないファイルのリスト
+  README.md       # プロジェクトの説明
